@@ -23,7 +23,7 @@ app.use(express.json());
 
 app.use('/contacts' , require('./routes/contacts'))
 app.use('/createuser' , require('./routes/userdetails'))
-
+app.use('/finduser' , require('./routes/findc   ontacts'))
 
 mongoose.connection.once('open', ()=>{
     console.log("connected to database");
